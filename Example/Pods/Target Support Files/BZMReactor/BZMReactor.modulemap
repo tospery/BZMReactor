@@ -1,0 +1,6 @@
+framework module BZMReactor {
+  umbrella header "BZMReactor-umbrella.h"
+
+  export *
+  module * { export * }
+}
