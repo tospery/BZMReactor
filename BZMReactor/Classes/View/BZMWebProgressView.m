@@ -23,7 +23,6 @@
         self.progressBarView.qmui_top = 0;
         self.progressBarView.qmui_width = 0;
         self.progressBarView.qmui_height = frame.size.height;
-        self.progressBarView.dk_backgroundColorPicker = DKColorPickerWithKey(TINT);
         [self addSubview:self.progressBarView];
         
         self.barAnimationDuration = 0.27f;

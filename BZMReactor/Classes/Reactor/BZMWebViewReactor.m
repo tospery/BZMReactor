@@ -25,9 +25,13 @@
         self.ocHandlers = BZMArrMember(parameters, BZMParameter.ocHandlers, nil);
         self.jsHandlers = BZMArrMember(parameters, BZMParameter.jsHandlers, nil);
         self.url = BZMObjWithDft(BZMURLMember(parameters, JLRouteURLKey, nil), BZMURLMember(parameters, BZMParameter.url, nil));
-        self.progressColor = UIColor.redColor; // BZMColorKey(TINT); // YJX_TODO
+        self.progressColor = BZMColorMember(parameters, BZMParameter.progressColor, BZMColorKey(TINT));
     }
     return self;
+}
+
+- (void)didInitialize {
+    [super didInitialize];
 }
 
 @end

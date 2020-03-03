@@ -93,6 +93,7 @@
 - (BZMWebProgressView *)progressView {
     if (!_progressView) {
         BZMWebProgressView *progressView = [[BZMWebProgressView alloc] initWithFrame:CGRectMake(0, self.contentTop, self.view.qmui_width, 1.5f)];
+        progressView.progressBarView.backgroundColor = self.reactor.progressColor;
         _progressView = progressView;
     }
     return _progressView;
@@ -119,9 +120,9 @@
     }];
 }
 
-//- (void)reloadData {
-//    [super reloadData];
-//}
+- (void)reloadData {
+    [super reloadData];
+}
 
 - (void)triggerLoad {
     NSURLRequest *request = [NSURLRequest requestWithURL:self.reactor.url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];

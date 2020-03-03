@@ -8,8 +8,10 @@
 #import "BZMScrollViewController.h"
 #import <WebKit/WebKit.h>
 #import <WebViewJavascriptBridge/WebViewJavascriptBridge.h>
+#import "BZMWebViewReactor.h"
 
 @interface BZMWebViewController : BZMScrollViewController <WKNavigationDelegate, WKUIDelegate>
+@property (nonatomic, strong, readonly) BZMWebViewReactor *reactor;
 @property (nonatomic, strong, readonly) WKWebView *webView;
 @property (nonatomic, strong, readonly) WebViewJavascriptBridge *bridge;
 

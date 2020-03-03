@@ -14,7 +14,7 @@
 @property (nonatomic, strong, readonly) NSString *bzm_JSONString;
 @property (class, strong, readonly) NSString *bzm_className;
 
-- (NSData *)bzm_JSONData:(BOOL)prettyPrinted;
+- (NSString *)bzm_JSONString:(BOOL)prettyPrinted;
 
 @end
 

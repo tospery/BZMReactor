@@ -57,13 +57,17 @@
     return [NSJSONSerialization dataWithJSONObject:self.bzm_JSONObject options:(prettyPrinted ? NSJSONWritingPrettyPrinted : kNilOptions) error:nil];
 }
 
-- (NSString *)bzm_JSONString {
+- (NSString *)bzm_JSONString:(BOOL)prettyPrinted {
     if ([self isKindOfClass:[NSString class]]) {
         return (NSString *)self;
     } else if ([self isKindOfClass:[NSData class]]) {
         return [[NSString alloc] initWithData:(NSData *)self encoding:NSUTF8StringEncoding];
     }
-    return [[NSString alloc] initWithData:self.bzm_JSONData encoding:NSUTF8StringEncoding];
+    return [[NSString alloc] initWithData:[self bzm_JSONData:prettyPrinted] encoding:NSUTF8StringEncoding];
+}
+
+- (NSString *)bzm_JSONString {
+    return [self bzm_JSONString:NO];
 }
 
 #pragma mark - Class
