@@ -15,8 +15,8 @@
 #import "BZMParameter.h"
 #import "BZMWebViewReactor.h"
 #import "BZMWebProgressView.h"
-#import "NSString+BZMFrame.h"
-#import "NSURL+BZMFrame.h"
+#import "NSString+BZMReactor.h"
+#import "NSURL+BZMReactor.h"
 
 #define kBZMWebEstimatedProgress         (@"estimatedProgress")
 

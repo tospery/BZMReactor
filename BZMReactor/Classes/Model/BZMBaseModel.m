@@ -8,10 +8,10 @@
 #import "BZMBaseModel.h"
 #import <PINCache/PINCache.h>
 #import "BZMFunction.h"
-#import "NSString+BZMFrame.h"
-#import "NSNumber+BZMFrame.h"
-#import "NSDictionary+BZMFrame.h"
-#import "MTLJSONAdapter+BZMFrame.h"
+#import "NSString+BZMReactor.h"
+#import "NSNumber+BZMReactor.h"
+#import "NSDictionary+BZMReactor.h"
+#import "MTLJSONAdapter+BZMReactor.h"
 
 NSMutableDictionary *currents = nil;
 

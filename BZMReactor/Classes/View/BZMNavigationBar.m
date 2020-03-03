@@ -8,9 +8,9 @@
 #import "BZMNavigationBar.h"
 #import <DKNightVersion/DKNightVersion.h>
 #import "BZMFunction.h"
-#import "UIFont+BZMFrame.h"
-#import "UIImage+BZMFrame.h"
-#import "UIView+BZMFrame.h"
+#import "UIFont+BZMReactor.h"
+#import "UIImage+BZMReactor.h"
+#import "UIView+BZMReactor.h"
 
 @interface BZMNavigationBar ()
 @property (nonatomic, strong, readwrite) UILabel *titleLabel;

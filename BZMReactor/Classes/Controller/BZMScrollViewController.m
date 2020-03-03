@@ -15,9 +15,9 @@
 #import "BZMWebViewController.h"
 #import "BZMLoginViewController.h"
 #import "BZMCollectionViewController.h"
-#import "NSError+BZMFrame.h"
-#import "NSURL+BZMFrame.h"
-#import "UIScrollView+BZMFrame.h"
+#import "NSError+BZMReactor.h"
+#import "NSURL+BZMReactor.h"
+#import "UIScrollView+BZMReactor.h"
 
 @interface BZMScrollViewController ()
 @property (nonatomic, assign, readwrite) CGFloat lastPosition;

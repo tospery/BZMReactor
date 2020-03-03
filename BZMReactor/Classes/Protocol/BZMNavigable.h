@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BZMType.h"
-#import "UIViewController+BZMFrame.h"
+#import "UIViewController+BZMReactor.h"
 
 @class BZMViewReactor;
 

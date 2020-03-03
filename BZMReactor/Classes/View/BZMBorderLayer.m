@@ -9,7 +9,7 @@
 #import <QMUIKit/QMUIKit.h>
 #import <DKNightVersion/DKNightVersion.h>
 #import "BZMFunction.h"
-#import "NSDictionary+BZMFrame.h"
+#import "NSDictionary+BZMReactor.h"
 
 @interface BZMBorderLayer ()
 @property (nonatomic, strong) CALayer *topBorder;

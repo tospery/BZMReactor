@@ -15,8 +15,8 @@
 #import "BZMUser.h"
 #import "BZMMisc.h"
 #import "BZMParameter.h"
-#import "NSDictionary+BZMFrame.h"
-#import "UIView+BZMFrame.h"
+#import "NSDictionary+BZMReactor.h"
+#import "UIView+BZMReactor.h"
 
 @interface BZMAppDependency ()
 @property (nonatomic, strong, readwrite) BZMProvider *provider;

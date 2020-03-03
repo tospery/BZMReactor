@@ -10,7 +10,7 @@
 #import "BZMConstant.h"
 #import "BZMFunction.h"
 #import "BZMParameter.h"
-#import "NSDictionary+BZMFrame.h"
+#import "NSDictionary+BZMReactor.h"
 
 @interface BZMWebViewReactor ()
 @property (nonatomic, strong, readwrite) NSURL *url;

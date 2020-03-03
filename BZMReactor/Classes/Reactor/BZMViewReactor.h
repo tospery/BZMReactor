@@ -36,6 +36,7 @@ typedef NS_ENUM(NSInteger, BZMRequestMode) {
 @property (nonatomic, strong) NSString *animation;
 @property (nonatomic, strong, readonly) NSDictionary *parameters;
 @property (nonatomic, strong, readonly) BZMUser *user;
+@property (nonatomic, strong, readonly) BZMBaseModel *model;
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) NSError *error;
 @property (nonatomic, assign) BZMRequestMode requestMode;

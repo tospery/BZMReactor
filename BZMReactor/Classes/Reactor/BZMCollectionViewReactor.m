@@ -9,8 +9,8 @@
 #import "BZMConstant.h"
 #import "BZMReactive.h"
 #import "BZMSupplementary.h"
-#import "NSError+BZMFrame.h"
-#import "UICollectionReusableView+BZMFrame.h"
+#import "NSError+BZMReactor.h"
+#import "UICollectionReusableView+BZMReactor.h"
 
 @interface BZMCollectionViewReactor ()
 

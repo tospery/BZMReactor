@@ -7,8 +7,8 @@
 
 #import "BZMReactorManager.h"
 #import <QMUIKit/QMUIKit.h>
-#import "NSString+BZMFrame.h"
-#import "UIApplication+BZMFrame.h"
+#import "NSString+BZMReactor.h"
+#import "UIApplication+BZMReactor.h"
 
 @interface BZMReactorManager ()
 

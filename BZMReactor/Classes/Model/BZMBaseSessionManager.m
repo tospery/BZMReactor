@@ -11,7 +11,7 @@
 #import "BZMFunction.h"
 #import "BZMBaseResponse.h"
 #import "BZMBaseList.h"
-#import "NSError+BZMFrame.h"
+#import "NSError+BZMReactor.h"
 
 typedef RACSignal *(^MapBlock)(BZMBaseResponse *);
 

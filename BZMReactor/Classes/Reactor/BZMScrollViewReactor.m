@@ -12,11 +12,11 @@
 #import "BZMReactorManager.h"
 #import "BZMAppDependency.h"
 #import "BZMLoginViewController.h"
-#import "NSDictionary+BZMFrame.h"
-#import "NSError+BZMFrame.h"
-#import "NSAttributedString+BZMFrame.h"
-#import "UIFont+BZMFrame.h"
-#import "UIImage+BZMFrame.h"
+#import "NSDictionary+BZMReactor.h"
+#import "NSError+BZMReactor.h"
+#import "NSAttributedString+BZMReactor.h"
+#import "UIFont+BZMReactor.h"
+#import "UIImage+BZMReactor.h"
 
 @interface BZMScrollViewReactor ()
 @property (nonatomic, strong, readwrite) BZMPage *page;

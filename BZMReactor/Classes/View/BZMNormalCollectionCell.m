@@ -10,10 +10,10 @@
 #import <DKNightVersion/DKNightVersion.h>
 #import "BZMFunction.h"
 #import "BZMBorderLayer.h"
-#import "UIFont+BZMFrame.h"
-#import "UIImage+BZMFrame.h"
-#import "NSURL+BZMFrame.h"
-#import "UIView+BZMFrame.h"
+#import "UIFont+BZMReactor.h"
+#import "UIImage+BZMReactor.h"
+#import "NSURL+BZMReactor.h"
+#import "UIView+BZMReactor.h"
 #import "BZMNormalCollectionReactor.h"
 
 @interface BZMNormalCollectionCell ()

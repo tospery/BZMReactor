@@ -46,7 +46,7 @@
 #define kBZMAnimationBounce                         (@"bounce")
 
 #pragma mark - 便捷
-#define kBZMFrameName                               (@"BZMFrame")
+#define kBZMFrameName                               (@"BZMReactor")
 //#define kBZMVCSuffix                                (@"ViewController")
 //#define kBZMVMSuffix                                (@"ViewModel")
 #define kBZMBindObjectKey                           (@"kBZMBindObjectKey")

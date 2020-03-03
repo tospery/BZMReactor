@@ -12,7 +12,7 @@
 #import "BZMCollectionCell.h"
 #import "BZMSupplementaryView.h"
 #import "BZMCollectionViewReactor.h"
-#import "UICollectionReusableView+BZMFrame.h"
+#import "UICollectionReusableView+BZMReactor.h"
 
 @interface BZMCollectionViewController ()
 @property (nonatomic, strong, readwrite) UICollectionView *collectionView;

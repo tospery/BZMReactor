@@ -13,14 +13,15 @@
 #import "BZMAppDependency.h"
 #import "BZMParameter.h"
 #import "BZMViewController.h"
-#import "NSObject+BZMFrame.h"
-#import "NSDictionary+BZMFrame.h"
-#import "UIViewController+BZMFrame.h"
-#import "NSError+BZMFrame.h"
+#import "NSObject+BZMReactor.h"
+#import "NSDictionary+BZMReactor.h"
+#import "UIViewController+BZMReactor.h"
+#import "NSError+BZMReactor.h"
 
 @interface BZMViewReactor ()
 @property (nonatomic, strong, readwrite) NSDictionary *parameters;
 @property (nonatomic, strong, readwrite) BZMUser *user;
+@property (nonatomic, strong, readwrite) BZMBaseModel *model;
 @property (nonatomic, strong, readwrite) BZMProvider *provider;
 //@property (nonatomic, strong, readwrite) BZMNavigator *navigator;
 //@property (nonatomic, strong, readwrite) RACCommand *backCommand;
@@ -49,6 +50,18 @@
         self.hidesNavBottomLine = BZMBoolMember(parameters, BZMParameter.hideNavLine, NO);
         self.title = BZMStrMember(parameters, BZMParameter.title, nil);
         self.animation = BZMStrMember(parameters, BZMParameter.animation, nil);
+        // Model
+        id model = BZMObjMember(parameters, BZMParameter.model, nil);
+        if (model && [model isKindOfClass:NSString.class]) {
+            NSDictionary *json = [model bzm_JSONObject];
+            if (json && [json isKindOfClass:NSDictionary.class]) {
+                Class class = NSClassFromString([NSStringFromClass(self.class) stringByReplacingOccurrencesOfString:@"ViewReactor" withString:@""]);
+                if (class && [class conformsToProtocol:@protocol(MTLJSONSerializing)]) {
+                    model = [MTLJSONAdapter modelOfClass:class fromJSONDictionary:json error:nil];
+                }
+            }
+        }
+        self.model = model;
         // User
         NSDictionary *json = BZMStrMember(parameters, BZMParameter.user, nil).bzm_JSONObject;
         if (json && [json isKindOfClass:NSDictionary.class]) {

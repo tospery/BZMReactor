@@ -16,9 +16,9 @@
 #import "BZMAppDependency.h"
 #import "BZMParameter.h"
 #import "BZMViewController.h"
-#import "NSDictionary+BZMFrame.h"
-#import "UIViewController+BZMFrame.h"
-#import "NSError+BZMFrame.h"
+#import "NSDictionary+BZMReactor.h"
+#import "UIViewController+BZMReactor.h"
+#import "NSError+BZMReactor.h"
 
 @interface BZMViewController ()
 //@property (nonatomic, strong) UIButton *backButton;
