@@ -6,9 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QMUIKit/QMUIKit.h>
 #import <DKNightVersion/DKNightVersion.h>
 
 #define BZMImageFrame(x)        ([UIImage bzm_imageInFrame:BZMStrWithFmt(@"BZMReactor/%@", (x))])
+#define BZMImageColor(x)        ([UIImage qmui_imageWithColor:(x)])
 
 @interface UIImage (BZMReactor)
 @property (nonatomic, copy, setter = dk_setTintColorPicker:) DKColorPicker dk_tintColorPicker;
