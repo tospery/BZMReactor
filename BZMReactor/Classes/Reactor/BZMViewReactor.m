@@ -217,6 +217,10 @@
     return nil;
 }
 
+- (void)reload {
+    
+}
+
 #pragma mark - Class
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
     BZMViewReactor *reactor = [super allocWithZone:zone];

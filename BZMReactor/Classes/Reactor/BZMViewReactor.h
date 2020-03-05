@@ -55,6 +55,7 @@ typedef NS_ENUM(NSInteger, BZMRequestMode) {
 - (RACSignal *)requestRemoteSignalWithPage:(NSInteger)page;
 
 - (NSArray *)data2Source:(id)data;
+- (void)reload;
 
 @end
 
